@@ -1,5 +1,30 @@
+@font-face {
+  font-family: RoundsBlack;
+  src: url(../fonts/RoundsBlack.ttf); }
+
 body {
-  background-color: red;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s; }
+  background-color: #EDE7A2; }
+
+.headLogo {
+  text-align: center;
+  color: #CD4350;
+  font-family: RoundsBlack; }
+  .headLogo h1 {
+    font-size: 45px;
+    margin: 0;
+    padding: 0; }
+  .headLogo p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 0.1; }
+
+.bg-img {
+  background: url(../img/bg-img.jpg) no-repeat;
+  background-position: bottom;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-attachment: fixed;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 100%; }
