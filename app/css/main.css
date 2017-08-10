@@ -3,20 +3,40 @@
   src: url(../fonts/RoundsBlack.ttf); }
 
 body {
-  background-color: #EDE7A2; }
-
-.headLogo {
-  text-align: center;
-  color: #CD4350;
+  background-color: #EDE7A2;
   font-family: RoundsBlack; }
-  .headLogo h1 {
+
+section.headLogo {
+  text-align: center;
+  color: #CD4350; }
+  section.headLogo h1 {
     font-size: 45px;
     margin: 0;
     padding: 0; }
-  .headLogo p {
+  section.headLogo p {
     margin: 0;
-    font-size: 14px;
-    line-height: 0.1; }
+    font-size: 15px;
+    line-height: 0.4; }
+
+section.clockHead {
+  text-align: center;
+  margin-top: 10px; }
+  section.clockHead .clock {
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    margin: 0;
+    padding: 1px;
+    display: inline-block;
+    font-size: 21px;
+    line-height: 0.6;
+    color: #7D3E9A; }
+  section.clockHead .clock li {
+    list-style-type: none;
+    display: inline-block; }
+  section.clockHead .clock li:after {
+    content: ' :'; }
+  section.clockHead .clock li:last-child:after {
+    content: ''; }
 
 .bg-img {
   background: url(../img/bg-img.jpg) no-repeat;

@@ -4,19 +4,39 @@
 
 body
 	background-color: #EDE7A2
+	font-family: RoundsBlack
 
-.headLogo
+
+section.headLogo
 	text-align: center
 	color: #CD4350
-	font-family: RoundsBlack
 	h1
 		font-size: 45px
 		margin: 0
 		padding: 0
 	p
 		margin: 0
-		font-size: 14px
-		line-height: 0.1
+		font-size: 15px
+		line-height: 0.4
+
+section.clockHead
+	text-align: center
+	margin-top: 10px
+	.clock
+		border-radius: 5px
+		margin: 0
+		padding: 1px
+		display: inline-block
+		font-size: 21px
+		line-height: 0.6
+		color: #7D3E9A
+	.clock li
+		list-style-type: none
+		display: inline-block
+	.clock li:after
+		content: ' :'
+	.clock li:last-child:after
+		content: ''
 
 
 
