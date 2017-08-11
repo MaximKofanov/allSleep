@@ -185,13 +185,21 @@ $(function(){
       buttonStart = 'стоп';
       $('.startAlarm').html(buttonStart);
       counterStartAlarm = 0;
+      disabledSound();
       $('.soundAlarm').html('<audio src="sound/alarm.mp3" loop autoplay></audio>');
+
     }   
     timeA = setTimeout(goTime, 1000);
   },0);
 
 
-  
+  function disabledSound(){
+    $('.soundRain').html('');
+    $('.soundForest').html('');
+    $('.soundBonfire').html('');
+    $('.soundSea').html('');
+    $('#rainClick, #forestClick, #bonfireClick, #seaClick').css('border','1px solid transparent'); 
+  }
 
 
 });
