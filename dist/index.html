@@ -4,8 +4,56 @@
 	<meta charset="UTF-8">
 	<title>allSleep</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="libs/bootstrap-grid/css/bootstrap-grid.css">
+	<script src="libs/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-	<h1>NEW1</h1>
+	
+	<header>
+		<div class="container">
+			<div class="row">
+				<section class="headLogo">
+					<h1>allsleep</h1>
+					<p>все для релакса и сна</p>			
+				</section>
+				<section class="clockHead">
+					<ul class="clock">
+						<li id="hour">00</li>
+						<li id="minute">00</li>
+						<li id="sec">00</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<section class="sound">
+				<div class="col-md-3">
+					<img src="img/rain.png" alt="rain" id="rainClick">
+					<div class="soundRain"></div>
+				</div>
+				<div class="col-md-3">
+					<img src="img/forest.png" alt="forest" id="forestClick">
+					<div class="soundForest"></div>
+				</div>
+				<div class="col-md-3">
+					<img src="img/bonfire.png" alt="bonfire" id="bonfireClick">
+					<div class="soundBonfire"></div>
+				</div>
+				<div class="col-md-3">
+					<img src="img/sea.png" alt="sea" id="seaClick">
+					<div class="soundSea"></div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+
+	
+	<div class="bg-img"></div>		
+
+<script src="js/main.js"></script>
 </body>
 </html>

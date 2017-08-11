@@ -27,22 +27,26 @@
 		</div>
 	</header>
 
+	<div class="line">
+		<h2>Звуки природы</h2>
+	</div>
+
 	<div class="container">
 		<div class="row">
 			<section class="sound">
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<img src="img/rain.png" alt="rain" id="rainClick">
 					<div class="soundRain"></div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<img src="img/forest.png" alt="forest" id="forestClick">
 					<div class="soundForest"></div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<img src="img/bonfire.png" alt="bonfire" id="bonfireClick">
 					<div class="soundBonfire"></div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<img src="img/sea.png" alt="sea" id="seaClick">
 					<div class="soundSea"></div>
 				</div>
@@ -50,8 +54,23 @@
 		</div>
 	</div>
 
-
+	<div class="line">
+		<h2>Будильник</h2>
+	</div>
 	
+	<div class="container">
+		<div class="row">
+			<section class="aClock">
+				<ul class="alarmClock">
+					<li><span id="alaramHourMinus" onmousedown="return false">-</span><span id="alaramHourPlus" onmousedown="return false">+</span><b class="hoursAlarm"></b></li>
+					<li><span id="alaramMinuteMinus" onmousedown="return false">-</span><span id="alaramMinutePlus" onmousedown="return false">+</span><b class="MinutesAlarm"></b></li>
+				</ul>
+				<div class="startAlarm" onmousedown="return false"></div>
+				<div class="soundAlarm"></div>
+			</section>
+		</div>
+	</div>
+
 	<div class="bg-img"></div>		
 
 <script src="js/main.js"></script>

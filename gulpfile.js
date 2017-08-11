@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 		imagemin = require('gulp-imagemin'),
 		pngquant = require('imagemin-pngquant'),
 		cache = require('gulp-cache'),
-		autoprefixer = require('gulp-autoprefixer');;
+		autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function(){
 	return gulp.src('app/sass/**/*.sass')
@@ -66,8 +66,13 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 		.pipe(gulp.dest('dist/fonts'))
 		var buildJs = gulp.src('app/js/**/*') // Переносим скрипты dist
 		.pipe(gulp.dest('dist/js'))
+		var buildLibs = gulp.src('app/libs/**/*') // Переносим библиотеки
+		.pipe(gulp.dest('dist/libs'));
+		var buildSound = gulp.src('app/sound/**/*') // Переносим музыку
+		.pipe(gulp.dest('dist/sound'));
 		var buildHtml = gulp.src('app/*.html') // Переносим HTML dist
 		.pipe(gulp.dest('dist'));
+		
 });
 
 gulp.task('clear', function () {

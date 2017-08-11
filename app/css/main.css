@@ -38,18 +38,30 @@ section.clockHead {
   section.clockHead .clock li:last-child:after {
     content: ''; }
 
-section.sound div {
+.line {
+  width: 100%;
+  background-color: #F9F5AD;
+  position: absolute;
+  left: 0;
+  opacity: 0.7; }
+  .line h2 {
+    margin: 0;
+    text-align: center;
+    color: #8CCE30; }
+
+section.sound > div {
   text-align: center;
-  margin-top: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  margin-top: 35px;
   padding: 0;
   z-index: 1;
   opacity: 0.7;
   -webkit-transition: 0.7s;
   -o-transition: 0.7s;
-  transition: 0.7s; }
-  section.sound div:hover {
+  transition: 0.7s;
+  border: 1px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  section.sound > div:hover {
     opacity: 1; }
 
 section.sound img {
@@ -61,6 +73,45 @@ section.sound img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+section.aClock {
+  text-align: center; }
+
+section .alarmClock {
+  background-color: #5C582C;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-top: 35px; }
+  section .alarmClock li {
+    min-width: 70px;
+    list-style-type: none;
+    display: inline-block;
+    border: 5px solid #5C582C;
+    font-size: 40px;
+    background-color: #C7C37B;
+    padding: 20px;
+    position: relative; }
+    section .alarmClock li span {
+      position: absolute;
+      bottom: 0;
+      line-height: 0.6;
+      opacity: 0.3;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      cursor: pointer; }
+      section .alarmClock li span:hover {
+        opacity: 1; }
+      section .alarmClock li span:nth-child(odd) {
+        left: 2px; }
+      section .alarmClock li span:nth-child(even) {
+        right: 2px; }
+
+.startAlarm {
+  cursor: pointer; }
+  .startAlarm:active {
+    color: #CA582C; }
+
 .bg-img {
   background: url(../img/bg-img.jpg) no-repeat;
   background-position: bottom;
@@ -71,4 +122,5 @@ section.sound img {
   position: fixed;
   bottom: 0;
   height: 100%;
-  opacity: 0.15; }
+  opacity: 0.15;
+  z-index: -1; }
